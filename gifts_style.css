@@ -1,0 +1,634 @@
+
+
+html {
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+  }
+  body, h1, h2, h3, p, ul {
+      margin: 0;
+      
+   } 
+   
+  ul {
+      list-style: none;
+      padding: 0;
+   }
+  
+  a {
+      text-decoration: none;
+      color: inherit;
+   }
+  
+   .wrapper {
+     max-width: 1440px;
+     margin: 0 auto;
+     overflow: hidden;
+     width: 100%;
+     position: relative;
+   }
+
+   .header {
+    max-width: 100%;
+    padding: 0 8px;
+  
+  }
+  
+  .header__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    padding: 12px 0;
+    gap: 12px;
+  
+  }
+  
+  
+  
+  .logo {
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.6px;
+    padding: 8px 20px;
+  }
+  
+  .list-item {
+      display: flex;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      gap: 8px;
+      
+      
+  }
+  
+  .item {
+      width: auto;
+      height: 40px;
+      transition: 0.5s;
+      gap: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+  }
+  .item-link {
+    padding: 12px 20px;
+    align-items: center;
+      box-sizing: border-box;
+  }
+  
+  .item:hover {
+    color: #FF4646;
+    background-color: #FF46461A;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  
+   .link-active{
+    cursor:default;
+   }
+  
+  .active{
+    background-color: #FF46461A;
+    color: #FF4646;
+    border-radius: 12px;
+    
+  }
+  
+  
+    .gifts__list-item {
+        font-size: 12px;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+    }
+  .gifts {
+        background-color: #FF4646;
+        background-image:  url(assets/img/bg-garland.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 60px 8px;
+        border-radius: 20px;
+      }
+.gifts__item {
+ padding: 12px 20px;
+}
+
+.gifts__header {
+        max-width: 426px;
+        margin: auto;
+        text-align: center;
+        
+      }
+      
+ 
+  .gifts__subtitle {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        line-height: 48px;
+        font-size: 32px;
+        letter-spacing: 5.76px;
+        color: #ffffff;
+        text-transform: uppercase;
+        
+      }
+      
+ 
+.gifts__list{
+    
+    
+    margin: auto;
+}
+      .gifts__list-item {
+        display: flex;
+        justify-content: space-between;
+        color: #ffffff;
+        gap: 8px;
+      }
+.item-active {
+    background: #FFFFFF33;
+    border-radius: 12px;
+}  
+
+
+  .gifts__text {
+    position: absolute;
+    bottom: 0;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 310px;
+    height: 112px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    line-height: 24.32px;
+    font-size: 16px;
+    letter-spacing: 1.28px;
+    color: #181C29;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    transition: 0.5s
+  }
+  
+  .gifts__container-card:hover .subtitle {
+    color: #FF4646;
+  }
+  
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    line-height: 15.6px;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    color: #4361FF;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+  }
+  
+  
+  
+  .gifts__container { 
+    width: 88.6%px;
+    margin: auto;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gifts__container-card {
+    position: relative;
+    width: 310px;
+    height: 342px;
+    transition: 0.5s;
+    
+    
+  }
+  .gifts__card {
+    background-color: #ECF3F8;
+    border-radius: 20px;
+    
+  }
+  
+  .gifts__container-card:hover {
+    
+    
+    cursor: pointer;
+  }
+  
+  .gifts__img {
+    width: 310px;
+    height: 230px;
+  }
+  .gifts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .title-health {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    line-height: 15.6px;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    color: #06A44F;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+  }
+  
+  .title-harmony {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    line-height: 15.6px;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    color: #FF43F7;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+  }
+  
+  
+  
+  .footer {
+    width: 100%;
+    padding: 60px 8px;
+    box-sizing: border-box;
+  }
+  
+  .footer__card {
+    width: 417.33px;
+    background-color: #ECF3F8;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+    color: #181C29;
+    transition: 0.5s;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+
+  .footer__card:hover {
+    color: #FF4646;
+  }
+  
+  .card-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    line-height: 36.48px;
+    font-size: 24px;
+    letter-spacing: 3.84px;
+    
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .card-title:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    line-height: 24.32px;
+    font-size: 16px;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+  }
+  
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    gap: 12px;
+  }
+  
+  
+  .telegram {
+    
+    width: 24px;
+    height: 24px;
+  }
+  
+  
+  
+  .facebook {
+    
+    width: 24px;
+    height: 24px;
+  }
+  
+  .instagram {
+    
+    width: 24px;
+    height: 24px;
+  }
+  
+  .x {
+    
+    width: 24px;
+    height: 24px;
+  }
+  
+  
+  
+  .social-list {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .footer__social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  
+  }
+  
+  .footer__copy {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 23.68px;
+    font-size: 16px;
+    color: #181C29;
+    
+    transition: 0.5s;
+  }
+  
+  .footer__text {
+    font-family: "Allura", cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #181C29;
+    font-style: normal;
+    transition: 0.5s;
+    letter-spacing: 1.28px;
+    line-height: 24.32px;
+  }
+  
+  
+  
+  
+  .footer__text:hover { 
+    color: #ff2121;
+  }
+  
+  
+  
+  .telegram:hover  {
+    color: #FF4646;
+    
+    
+  }
+  
+  .facebook:hover  {
+    color: #FF4646;
+    
+    
+  }
+  
+  .instagram:hover  {
+    color: #FF4646;
+    
+    
+  }
+  
+  .x:hover  {
+    color: #FF4646;
+    
+    
+  }
+  
+  .telegram {
+    transition: 0.5s;
+    padding: 8px;
+  }
+  
+  .facebook {
+    transition: 0.5s;
+    padding: 8px;
+  } 
+  
+  .instagram {
+    transition: 0.5s;
+    padding: 8px;
+  }
+  
+  .x {
+    transition: 0.5s;
+    padding: 8px;
+  }
+  
+
+
+  .header__burger-btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    display: none;
+    background-color: #ffffff;
+  }
+  .header__burger-btn span {
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: #000000;
+    left: 10px;
+    transition: background-color .5s, opacity .25s, transform .5s;
+    z-index: 2;
+  }
+  
+  .header__burger-btn span:nth-child(1) {
+    transform: translateY(-5px);
+    
+  }
+  
+  .header__burger-btn span:nth-child(2) {
+    transform: translateY(5px);
+    
+  
+  }
+   
+  
+  .header.open-menu .header__burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+  }
+  
+  .header.open-menu .header__burger-btn span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+    
+  }
+  
+  
+  
+  
+  @media  (max-width: 768px) {
+    .footer__card {
+      width: 100%;
+      
+    }
+    .about__img {
+      justify-content: center;
+    }
+    .list {
+      position: absolute;
+      right: -100%;
+      top: 0;
+      width: 100%;
+      height: 1024px;
+      background-color: #ffffff;
+      visibility: hidden;
+      z-index: 1;
+      transition: transform .5s, visibility .5s;
+      
+      
+      
+    }
+    .list-item {
+      display: block;
+      letter-spacing: 4px;
+      font-size: 24px;
+      line-height: 36.48px;
+      font-weight: 600;
+      font-family: "Montserrat", sans-serif;
+      position: relative;
+      top: 41%;
+      
+      
+    }
+  
+    
+  
+    .header__burger-btn {
+      display: block;
+    }
+    .header.open-menu .list {
+      transform: translateX(-100%);
+      visibility: visible;
+    }
+    .item {
+      margin-bottom: 30px;
+      
+    }
+   .wrap-logo {
+    z-index: 2;
+   }
+   .active {
+    background-color: inherit;
+    color: inherit;
+   }
+   .header__container {
+    
+    width: 100%;
+  }
+  @media (hover: none) {
+    
+    .item:hover {
+      color: black;
+      background-color: rgb(255, 255, 255);
+    }
+    .gifts__container-card:hover .subtitle {
+      color: black;
+      
+    }
+    .footer__card:hover {
+      color: black;
+      
+    }
+    .footer__text:hover { 
+      color: black;
+    }
+    
+    
+    
+    .telegram:hover  {
+      color: black;
+      
+      
+    }
+    
+    .facebook:hover  {
+      color: black;
+      
+      
+    }
+    
+    .instagram:hover  {
+      color: black;
+      
+      
+    }
+    
+    .x:hover  {
+      color: black;
+      
+      
+    }
+  }
+  }
+  
+  
+  @media  (max-width: 380px) {
+    .footer__card {
+      width: 100%;
+      
+    }
+    .about__container{
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    .list {
+      height: 812px;
+    }
+    .list-item {
+      position: relative;
+      top: 39%;
+    }
+  .gifts__list-item {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+  }
+  .gifts__item {
+    padding: 12px 8px;
+  }
+  }
+
+
+  
